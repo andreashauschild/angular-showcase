@@ -10,6 +10,9 @@ import {ItemListEntryComponent} from './components/item-list-entry/item-list-ent
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import {Form1Component} from './components/pocs/form1/form1.component';
+import {ReactiveFormsModule, FormsModule} from '@angular/forms';
+import {DatabindingComponent} from './components/pocs/databinding/databinding.component';
 
 
 @NgModule({
@@ -18,7 +21,9 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     FlexformComponent,
     FlexfieldComponent,
     ItemListComponent,
-    ItemListEntryComponent
+    ItemListEntryComponent,
+    Form1Component,
+    DatabindingComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +31,9 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     HttpClientModule,
     BrowserAnimationsModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

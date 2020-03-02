@@ -1,0 +1,23 @@
+<div style="border: solid 1px">
+
+  <form [formGroup]="form1Form"
+        (ngSubmit)="onSubmit(form1Form.value)"
+  >
+    <div>
+      <label for="name">
+        Name
+      </label>
+      <input id="name" type="text" formControlName="name">
+    </div>
+
+    <div>
+      <label for="address">
+        Address
+      </label>
+      <input id="address" type="text" formControlName="address">
+    </div>
+    <button class="button" type="submit">Purchase</button>
+
+  </form>
+
+</div>
