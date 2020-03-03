@@ -1,15 +1,16 @@
-<div>
+<div class="mat-app-background basic-container">
+  <br/>
+  <div class="menu-button-row" style="text-align: center">
+    <a mat-stroked-button routerLink="">Items</a>
+    <a mat-stroked-button routerLink="databinding">Databinding</a>
+    <a mat-stroked-button routerLink="material-basic">Material-Basic</a>
+    <a mat-stroked-button routerLink="material-nested">Material-Nested</a>
+    <a mat-stroked-button routerLink="material-form-array">Material-Form-Array</a>
+  </div>
 
-    <a [title]="'form1'" [routerLink]="['form1']">form1</a>
-    -
-    <a [title]="'databinding'" [routerLink]="['databinding']">databinding</a>
-    -
-    <a [title]="'items'" [routerLink]="['']">items</a>
-
-
-
-    <router-outlet></router-outlet>
-
+  <hr>
+  <br/>
+  <router-outlet></router-outlet>
 
 
 </div>

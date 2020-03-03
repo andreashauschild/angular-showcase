@@ -9,7 +9,7 @@ export class DatabindingComponent implements OnInit {
 
   valueToDom = 'This is a value from component to dom';
 
-  twoWay = 'twayValue';
+  twoWay = 'twoWayValue';
 
   constructor() {
   }

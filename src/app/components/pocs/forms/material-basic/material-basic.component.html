@@ -1,0 +1,25 @@
+<!--Create form and connecte it to your form variable of your component-->
+<div class="myform-container">
+
+  <form [formGroup]="myForm">
+
+    value : {{myForm.value | json}}
+    <br/>
+
+
+    <mat-form-field appearance="standard">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email">
+    </mat-form-field>
+
+    <mat-form-field appearance="standard">
+      <mat-label>Message</mat-label>
+      <input matInput placeholder="message" formControlName="message">
+    </mat-form-field>
+
+    <br>
+
+
+  </form>
+
+</div>

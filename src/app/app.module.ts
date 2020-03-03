@@ -13,6 +13,11 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {Form1Component} from './components/pocs/form1/form1.component';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 import {DatabindingComponent} from './components/pocs/databinding/databinding.component';
+import { MaterialBasicComponent } from './components/pocs/forms/material-basic/material-basic.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+import { MatarialNestedComponent } from './components/pocs/forms/matarial-nested/matarial-nested.component';
+import { MatarialFormArrayComponent } from './components/pocs/forms/matarial-form-array/matarial-form-array.component';
 
 
 @NgModule({
@@ -23,7 +28,10 @@ import {DatabindingComponent} from './components/pocs/databinding/databinding.co
     ItemListComponent,
     ItemListEntryComponent,
     Form1Component,
-    DatabindingComponent
+    DatabindingComponent,
+    MaterialBasicComponent,
+    MatarialNestedComponent,
+    MatarialFormArrayComponent
   ],
   imports: [
     BrowserModule,
@@ -32,8 +40,10 @@ import {DatabindingComponent} from './components/pocs/databinding/databinding.co
     BrowserAnimationsModule,
     MatTableModule,
     MatPaginatorModule,
+    MatButtonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

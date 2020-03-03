@@ -1,0 +1,7 @@
+.myform-container {
+  text-align: center;
+}
+.myform-container .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+
+}
